@@ -61,10 +61,9 @@ int main() {
     } while(0);
 
     // socketを開いていればクローズ
-    if (sockfd < 0) {
+    if (sockfd >= 0) {
         close(sockfd);
     }
-
 
     return 0;
 }
